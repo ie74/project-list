@@ -694,7 +694,6 @@ PAGES
   justify-content: center;
   text-align: center;
   background: var(--color-surface);
-  border-style: dashed;
 }
 
 @media (max-width: 900px) {

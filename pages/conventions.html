@@ -33,18 +33,19 @@
         <img class="site-header__logo" src="/assets/logo/icon.svg" alt="Project List">
       </a>
 
-      <nav class="site-header__nav" aria-label="Navigazione principale">
+      <nav class="site-header__nav" id="site-nav" aria-label="Navigazione principale">
         <ul class="site-header__nav-list">
-          <li><a href="/index.html">Home</a></li>
+          <li><a href="/index.html" aria-current="page">Home</a></li>
           <li><a href="/pages/activities.html">Attività</a></li>
           <li><a href="/pages/events.html">Eventi</a></li>
-          <li><a href="/pages/conventions.html" aria-current="page">Convenzioni</a></li>
+          <li><a href="/pages/conventions.html">Convenzioni</a></li>
           <li><a href="/pages/faq.html">FAQ</a></li>
         </ul>
         <a href="/pages/merch.html" class="site-header__cta">Merch</a>
       </nav>
 
-      <button class="site-header__toggle" aria-label="Apri il menu">&#9776;</button>
+      <button class="site-header__toggle" aria-label="Apri il menu" aria-expanded="false"
+        aria-controls="site-nav">&#9776;</button>
     </div>
   </header>
 
@@ -86,7 +87,7 @@
       <div class="site-footer__bottom">
         <p>&copy; <span id="year"></span> Project List. Tutti i diritti riservati.</p>
         <div class="site-footer__legal-links">
-          <a href="https://github.com">Questo sito web è open source.</a>
+          <a href="https://github.com/ie74/project-list">Questo sito web è open source.</a>
         </div>
       </div>
 

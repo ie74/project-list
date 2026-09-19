@@ -659,3 +659,68 @@ PAGES
 .about__text {
   margin-block: var(--space-2) var(--space-3);
 }
+
+/* Activities */
+
+.bento {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 180px;
+      gap: var(--space-2);
+}
+
+
+.bento__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bento__item--wide {
+  grid-column: span 2;
+}
+
+.bento__item--tall {
+  grid-row: span 2;
+}
+
+.bento__icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.bento__item--more {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--color-surface);
+  border-style: dashed;
+}
+
+@media (max-width: 900px) {
+  .bento {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bento__item--wide {
+    grid-column: span 2;
+  }
+
+  .bento__item--tall {
+    grid-row: span 1;
+  }
+}
+
+@media (max-width: 540px) {
+  .bento {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .bento__item,
+  .bento__item--wide,
+  .bento__item--tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}

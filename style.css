@@ -665,7 +665,7 @@ PAGES
 .bento {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-auto-rows: 180px;
+      grid-auto-rows: minmax(180px, auto);
       gap: var(--space-2);
 }
 
@@ -674,6 +674,7 @@ PAGES
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 0;
 }
 
 .bento__item--wide {
@@ -694,6 +695,11 @@ PAGES
   justify-content: center;
   text-align: center;
   background: var(--color-surface);
+}
+
+.card__title,
+.card__text {
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 900px) {

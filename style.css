@@ -318,19 +318,6 @@ main {
   color: var(--color-text-secondary);
 }
 
-.card__badge {
-  display: inline-flex;
-  margin-top: var(--space-2);
-  padding: 0.25rem 0.65rem;
-  border-radius: 999px;
-  background: #e7efff;
-  color: var(--color-accent-navy);
-  font-size: var(--fs-xs);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
 /* ========================================================= */
 /* Header */
 
@@ -675,49 +662,6 @@ PAGES
 
 /* Activities */
 
-.events__intro {
-  max-width: 62ch;
-  margin-bottom: var(--space-4);
-}
-
-.events__grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-2);
-}
-
-.event-card {
-  min-height: 220px;
-  background: linear-gradient(145deg, #fff 40%, #edf3ff);
-}
-
-.event-card__meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-1);
-  margin-bottom: var(--space-3);
-}
-
-.event-card__date {
-  color: var(--color-accent-navy);
-  font-size: var(--fs-xs);
-  font-weight: 700;
-}
-
-.event-card__type {
-  color: var(--color-text-secondary);
-  font-size: var(--fs-xs);
-}
-
-.event-card__title {
-  margin-bottom: var(--space-1);
-}
-
-.event-card__text {
-  max-width: 56ch;
-}
-
 .coming-soon {
   position: relative;
   overflow: hidden;
@@ -785,13 +729,6 @@ PAGES
   margin: 0 auto var(--space-3);
 }
 
-.coming-soon__spark {
-  display: block;
-  margin-bottom: var(--space-1);
-  color: var(--color-accent);
-  font-size: 2rem;
-}
-
 .coming-soon__actions {
   display: flex;
   justify-content: center;
@@ -800,10 +737,6 @@ PAGES
 }
 
 @media (max-width: 600px) {
-  .events__grid {
-    grid-template-columns: 1fr;
-  }
-
   .coming-soon {
     min-height: 360px;
   }

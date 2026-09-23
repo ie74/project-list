@@ -318,79 +318,6 @@ main {
   color: var(--color-text-secondary);
 }
 
-/* Event cards -- variante grande di .card, usata nella pagina eventi.
-   Riusa .card come base (bordo, radius, hover lift) e aggiunge uno
-   slot immagine con badge data sovrapposto. */
-.card--event {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  padding: 0;
-  overflow: hidden;
-}
-
-@media (max-width: 830px) {
-  .card--event {
-    grid-template-columns: 1fr;
-  }
-}
-
-.card--event__media {
-  position: relative;
-  background: var(--color-surface);
-  min-height: 200px;
-}
-
-.card--event__media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card--event__date {
-  position: absolute;
-  top: var(--space-2);
-  left: var(--space-2);
-  background: var(--color-accent-navy);
-  color: #fff;
-  padding: 0.4em 0.9em;
-  border-radius: var(--radius-sm);
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: var(--fs-sm);
-  letter-spacing: 0.01em;
-}
-
-.card--event__body {
-  padding: var(--space-3);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-1);
-}
-
-.card--event__eyebrow {
-  color: var(--color-accent-navy);
-  font-weight: 600;
-}
-
-.card--event__title {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: var(--fs-xl);
-  color: var(--color-text-primary);
-  line-height: 1.15;
-}
-
-.card--event__text {
-  color: var(--color-text-secondary);
-  margin-top: var(--space-1);
-}
-
-.card--event__list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-}
-
 /* ========================================================= */
 /* Header */
 
@@ -734,6 +661,86 @@ PAGES
 }
 
 /* Activities */
+
+.coming-soon {
+  position: relative;
+  overflow: hidden;
+  min-height: 430px;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+
+.coming-soon::before,
+.coming-soon::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 340px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  filter: blur(1px);
+}
+
+.coming-soon::before {
+  top: -210px;
+  right: -70px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.2), transparent 70%);
+}
+
+.coming-soon::after {
+  bottom: -220px;
+  left: -70px;
+  background: radial-gradient(circle, rgba(11, 37, 88, 0.15), transparent 70%);
+}
+
+.coming-soon__content {
+  width: min(100%, 860px);
+  margin-inline: auto;
+  padding: clamp(2rem, 6vw, 5rem);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  box-shadow: 0 24px 70px rgba(11, 37, 88, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+.coming-soon__eyebrow {
+  display: inline-block;
+  margin-bottom: var(--space-2);
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: #e7efff;
+  color: var(--color-accent-navy);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.coming-soon__title {
+  margin-bottom: var(--space-2);
+  font-size: clamp(2.8rem, 8vw, 5.4rem);
+  letter-spacing: -0.06em;
+}
+
+.coming-soon__text {
+  max-width: 48ch;
+  margin: 0 auto var(--space-3);
+}
+
+.coming-soon__actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+@media (max-width: 600px) {
+  .coming-soon {
+    min-height: 360px;
+  }
+}
 
 .bento {
       display: grid;

@@ -47,10 +47,9 @@ package manager. This is a deliberate choice:
     └── img/             Any other image asset (e.g. social preview image)
 ```
 
-Pages inside `pages/` reference the shared files with root-relative paths
-(`/style.css`, `/script.js`), since the site is served from the domain
-root on Vercel. If you ever serve this from a subpath, switch those to
-relative paths (`../style.css`) instead.
+Pages inside `pages/` reference shared files and other pages with relative
+paths (for example, `../style.css` and `../script.js`). This keeps the links
+working when the HTML files are opened locally or served from a subpath.
 
 ## Design system
 

@@ -318,17 +318,77 @@ main {
   color: var(--color-text-secondary);
 }
 
-.card__badge {
-  display: inline-flex;
-  margin-top: var(--space-2);
-  padding: 0.25rem 0.65rem;
-  border-radius: 999px;
-  background: #e7efff;
+/* Event cards -- variante grande di .card, usata nella pagina eventi.
+   Riusa .card come base (bordo, radius, hover lift) e aggiunge uno
+   slot immagine con badge data sovrapposto. */
+.card--event {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  padding: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 830px) {
+  .card--event {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card--event__media {
+  position: relative;
+  background: var(--color-surface);
+  min-height: 200px;
+}
+
+.card--event__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card--event__date {
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-2);
+  background: var(--color-accent-navy);
+  color: #fff;
+  padding: 0.4em 0.9em;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  letter-spacing: 0.01em;
+}
+
+.card--event__body {
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.card--event__eyebrow {
   color: var(--color-accent-navy);
-  font-size: var(--fs-xs);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.card--event__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-xl);
+  color: var(--color-text-primary);
+  line-height: 1.15;
+}
+
+.card--event__text {
+  color: var(--color-text-secondary);
+  margin-top: var(--space-1);
+}
+
+.card--event__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
 }
 
 /* ========================================================= */

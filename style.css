@@ -730,18 +730,6 @@ PAGES
   margin-block: var(--space-2) var(--space-3);
 }
 
-.about__person-link {
-  color: var(--color-accent);
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
-  cursor: pointer;
-}
-
-.about__person-link:hover {
-  color: var(--color-accent-hover);
-}
-
 /* Activities */
 
 .coming-soon {

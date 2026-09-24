@@ -37,7 +37,7 @@ package manager. This is a deliberate choice:
 .
 ├── index.html          Landing page (home)
 ├── style.css           Single global stylesheet, imported by every page
-├── script.js           Shared JS: footer year + mobile menu toggle
+├── script.js           Shared JS: footer year, mobile menu, and site notice
 ├── pages/               Inner pages (platform, team, events, merch, etc.)
 │   └── ...              Each page is a standalone .html file, same
 │                         header/footer markup as index.html

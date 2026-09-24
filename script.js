@@ -43,7 +43,7 @@ if (!noticeAlreadyShown) {
             lì trovi tutti gli aggiornamenti!
         </p>
         <form method="dialog" class="site-notice__actions">
-            <a class="button button--primary" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Seguici su Instagram</a>
+            <a class="button button--primary" href="https://instagram.com/projectlist_messe" target="_blank" rel="noopener noreferrer">Seguici su Instagram</a>
             <button class="button button--secondary" type="submit">Continua sul sito</button>
         </form>
     `;

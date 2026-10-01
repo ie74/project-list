@@ -7,13 +7,13 @@
 
   <title>Eventi | Project List - A. Messedaglia</title>
   <meta name="description"
-    content="Gli eventi organizzati da Project List: feste, balli, giornate sulla neve e assemblee.">
+    content="Scopri le proposte di Project List per uscite, viaggi, assemblee e balli: dalle giornate sulla neve agli eventi di fine anno.">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Eventi | Project List">
   <meta property="og:description"
-    content="Gli eventi organizzati da Project List: feste, balli, giornate sulla neve e assemblee.">
+    content="Scopri le proposte di Project List per uscite, viaggi, assemblee e balli: dalle giornate sulla neve agli eventi di fine anno.">
   <meta property="og:image" content="../assets/img/og-cover.jpg">
   <meta property="og:locale" content="it_IT">
 
@@ -51,23 +51,109 @@
   </header>
 
   <main>
-    <section class="section coming-soon">
+    <section class="section events" aria-labelledby="events-title">
       <div class="container">
-        <div class="coming-soon__content">
-          <p class="caption coming-soon__eyebrow">Fuori dall'aula</p>
-          <h1 class="title coming-soon__title">Eventi coming soon</h1>
-          <p class="text text--muted text--lg coming-soon__text">
-            Feste, iniziative e momenti da vivere insieme: stiamo preparando il calendario. Date e dettagli saranno
-            pubblicati qui appena definiti.
-          </p>
-          <div class="coming-soon__actions">
-            <a href="../index.html" class="button button--primary">Torna alla home</a>
-            <a href="activities.html" class="button button--secondary">Scopri le attività</a>
+        <header class="events__intro">
+          <div>
+            <p class="caption events__eyebrow">Attività extrascolastiche, eventi e assemblee</p>
+            <h1 class="title events__title" id="events-title">Fuori dall'aula, insieme.</h1>
+            <p class="text text--lg events__lead">Dalle giornate sulla neve e al mare agli incontri e ai balli: le proposte per condividere esperienze anche fuori dalle lezioni.</p>
           </div>
-        </div>
+        </header>
+
+        <nav class="page-section-nav" aria-label="Sezioni degli eventi">
+          <a href="#uscite">01 <span>Uscite e viaggi</span></a>
+          <a href="#incontri">02 <span>Incontri e balli</span></a>
+        </nav>
+
+        <section class="events__chapter" id="uscite" aria-labelledby="events-travel-title">
+          <div class="events__chapter-head">
+            <p class="caption events__chapter-label">01 / Attività extrascolastiche</p>
+            <h2 class="title title--lg" id="events-travel-title">Uscite e viaggi</h2>
+            <p class="text text--muted">Una giornata insieme o un'esperienza più lunga: quattro modi per partire.</p>
+          </div>
+          <ol class="events__timeline" role="list" start="9">
+            <li class="events__entry">
+              <div class="events__entry-head">
+                <span class="events__number" aria-hidden="true">09</span>
+                <span class="events__place">Folgaria</span>
+              </div>
+              <h3 class="title events__entry-title">Giornate sulla neve</h3>
+              <p class="text text--muted">Viaggio di andata e ritorno in autobus, possibilità di sciare insieme durante il giorno e un momento di ritrovo finale con après-ski prima di ripartire.</p>
+            </li>
+            <li class="events__entry">
+              <div class="events__entry-head">
+                <span class="events__number" aria-hidden="true">10</span>
+                <span class="events__place">Jesolo</span>
+              </div>
+              <h3 class="title events__entry-title">Giornate al mare</h3>
+              <p class="text text--muted">Viaggio di andata e ritorno in autobus, giornata in spiaggia e possibilità di iscriversi ai tornei organizzati dal lido. Beach party prima di ripartire.</p>
+            </li>
+            <li class="events__entry">
+              <div class="events__entry-head">
+                <span class="events__number" aria-hidden="true">11</span>
+                <span class="events__place">Fine dell'anno scolastico</span>
+              </div>
+              <h3 class="title events__entry-title">Vacanze con il Messe</h3>
+              <p class="text text--muted">Vacanze di tre o più giorni a prezzi convenienti, organizzate insieme a Scuola Zoo Viaggi.</p>
+              <ul class="events__destinations" role="list" aria-label="Località proposte">
+                <li>Riccione</li><li>Rimini</li><li>Manfredonia</li><li>Tropea</li><li>Gallipoli</li>
+              </ul>
+            </li>
+            <li class="events__entry">
+              <div class="events__entry-head">
+                <span class="events__number" aria-hidden="true">12</span>
+                <span class="events__place">Estate</span>
+              </div>
+              <h3 class="title events__entry-title">Volunteer In The World</h3>
+              <p class="text text--muted">Vacanze studio estive di volontariato scontate per gli studenti del Messedaglia.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="events__chapter events__chapter--school" id="incontri" aria-labelledby="events-school-title">
+          <div class="events__chapter-head">
+            <p class="caption events__chapter-label">02 / Eventi, balli e assemblee</p>
+            <h2 class="title title--lg" id="events-school-title">Incontri e balli</h2>
+            <p class="text text--muted">Occasioni per incontrarsi, scegliere e festeggiare durante l'anno.</p>
+          </div>
+          <ol class="events__timeline" role="list" start="13">
+            <li class="events__entry">
+              <div class="events__entry-head">
+                <span class="events__number" aria-hidden="true">13</span>
+                <span class="events__place">A scuola</span>
+              </div>
+              <h3 class="title events__entry-title">Autogestione e assemblee</h3>
+              <p class="text text--muted">Lo stesso format dell'anno scorso, migliorato per aumentare il divertimento. Incontri con ospiti di rilievo scelti tramite la collaborazione con Scuola Zoo e Nova Student.</p>
+            </li>
+            <li class="events__entry">
+              <div class="events__entry-head">
+                <span class="events__number" aria-hidden="true">14</span>
+                <span class="events__place">Verona</span>
+              </div>
+              <h3 class="title events__entry-title">Ballo invernale</h3>
+              <p class="text text--muted">Un ballo in una delle più belle ville di Verona.</p>
+            </li>
+            <li class="events__entry">
+              <div class="events__entry-head">
+                <span class="events__number" aria-hidden="true">15</span>
+                <span class="events__place">Fine anno scolastico</span>
+              </div>
+              <h3 class="title events__entry-title">Ballo di fine anno</h3>
+              <p class="text text--muted">In una località open space, con la possibilità di fare tornei pomeridiani, cena e musica la sera.</p>
+            </li>
+            <li class="events__entry">
+              <div class="events__entry-head">
+                <span class="events__number" aria-hidden="true">16</span>
+                <span class="events__place">La scelta agli studenti</span>
+              </div>
+              <h3 class="title events__entry-title">Ballo 4ª e 5ª + 100 giorni</h3>
+              <p class="text text--muted">Durante l'anno scolastico proporremo diverse località, così potrete scegliere le vostre preferite.</p>
+            </li>
+          </ol>
+        </section>
       </div>
     </section>
-
   </main>
 
   <!-- ============ FOOTER ============ -->

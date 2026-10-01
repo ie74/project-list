@@ -37,10 +37,10 @@ if (!noticeAlreadyShown) {
             <button class="site-notice__close" type="submit" aria-label="Chiudi l'avviso"><span aria-hidden="true">&times;</span></button>
         </form>
         <p class="caption site-notice__eyebrow">Project List</p>
-        <h2 class="title site-notice__title" id="site-notice-title">Ehi, il sito sta prendendo forma!</h2>
+        <h2 class="title site-notice__title" id="site-notice-title">Il sito è quasi pronto!</h2>
         <p class="text text--muted site-notice__text" id="site-notice-description">
-            Stiamo preparando nuove pagine e contenuti. Nel frattempo, seguici su Instagram:
-            lì trovi tutti gli aggiornamenti!
+            Il sito ha preso vita: stiamo completando gli ultimi contenuti.
+            Resta aggiornato per scoprirlo nella sua versione completa!
         </p>
         <form method="dialog" class="site-notice__actions">
             <a class="button button--primary" href="https://instagram.com/projectlist_messe" target="_blank" rel="noopener noreferrer">Seguici su Instagram</a>

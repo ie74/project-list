@@ -2,8 +2,8 @@
 
 Official website for **Project List**, a student list running for student
 representative elections at Istituto A. Messedaglia. The site presents the
-list's platform, team, events, and merch, and links out to the external
-e-commerce store where merch is actually sold.
+list's platform, team, events, and a visual merch catalogue. The site does
+not take orders or show unconfirmed prices and availability.
 
 Live deployment: `projectlistmesse.vercel.app` (Vercel Hobby plan, static
 site, no build step).
@@ -37,7 +37,7 @@ package manager. This is a deliberate choice:
 .
 ├── index.html          Landing page (home)
 ├── style.css           Single global stylesheet, imported by every page
-├── script.js           Shared JS: footer year, mobile menu, and site notice
+├── script.js           Shared JS: footer year, mobile menu, intro, merch gallery
 ├── pages/               Inner pages (platform, team, events, merch, etc.)
 │   └── ...              Each page is a standalone .html file, same
 │                         header/footer markup as index.html
@@ -119,6 +119,11 @@ The hero includes a single-shot SVG stroke animation under the headline
 dash math independent of the path's actual on-screen length, avoiding a
 flash/jump on first render. It respects `prefers-reduced-motion`.
 
+The campaign intro in `script.js` appears once per browser session, including
+when someone lands on an inner page. It stays open until the visitor chooses
+the close button or "Continua sul sito". Reduced-motion users see its final
+composition immediately.
+
 ## Adding a new page
 
 1. Duplicate `pages/programma.html` (or any existing inner page) as a
@@ -147,4 +152,4 @@ preview thumbnail, but every other part of the site functions normally.
 Deployed on Vercel's free Hobby plan (static site, no server-side code).
 Relevant limits for context: 100 GB/month bandwidth, no commercial-use
 restriction issue here since this site itself doesn't process payments —
-the merch store is a separate external e-commerce link.
+the merch page is a visual catalogue and does not process orders or payments.
